@@ -1,7 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
+import ArticleOfDay from "./articleOfDay";
+import DashboardStat from "./dashboardStat";
 
-const Dashboard = () => {
-  return <div></div>;
-};
-
-export default Dashboard;
+export default class Dashboard extends Component {
+  render() {
+    return (
+      <div id="grid-wrapper">
+        <ArticleOfDay />
+        <DashboardStat />
+      </div>
+    );
+  }
+}
